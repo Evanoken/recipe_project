@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {GrFavorite} from 'react-icons/Gr'
-import Image from '../assets/istockphoto-1455160776-170667a.jpg'
+import Image from '../assets/freshia.jpg'
 import './favorites.css'
 function Favourites() {
   const [showText, setShowText] = useState ('true')
