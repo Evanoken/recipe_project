@@ -16,8 +16,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/recipe" element={<Recipe />}/>
-      <Route path="/favorite" element={<Favorite />}/>
-      <Route path="/about" element={ <About /> }/>
+      <Route path="/Favorite" element={<Favorite />}/>
+      <Route path="/About" element={ <About /> }/>
       <Route path="*" element={<NotFound />}/>
       
     </Routes>

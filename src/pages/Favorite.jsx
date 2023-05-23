@@ -1,5 +1,5 @@
 import {useSelector} from 'react'
-const Favorites = () => {
+const Favorite = () => {
   const [favorites, setFavorites] = useSelector((state) => state.recipes.favorites);
 
   return (
@@ -20,4 +20,4 @@ const Favorites = () => {
   );
 };
 
-export default Favorites;
+export default Favorite;

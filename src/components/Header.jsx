@@ -10,19 +10,19 @@ function Header() {
       <ul className="navbar"> {/* Apply the "navbar" class */}
         <li>
           <FaFortAwesome />
-          <span className="span"><Link to ="/">Home</Link></span>
+          <span className="span"><Link to ="/" style={{textDecoration:'none'}}>Home</Link></span>
         </li>
         <li>
           <FaSwift />
-          <span className="span"><Link to ="/recipe">Recipe</Link></span>
+          <span className="span"><Link to ="/recipe" style={{textDecoration:'none'}}>Recipe</Link></span>
         </li>
         <li>
           <MdOutlineFavoriteBorder/>
-          <span className="span"><Link to = "/favorite">favorites</Link></span>
+          <span className="span"><Link to = "/favorite" style={{textDecoration:'none'}}>favorites</Link></span>
         </li>
         <li>
           <FcAbout/>
-          <span className="span"><Link to ="/about">About</Link></span>
+          <span className="span"><Link to ="/about" style={{textDecoration:'none'}}>About</Link></span>
         </li>
       </ul>
     </div>
