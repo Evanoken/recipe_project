@@ -1,9 +1,9 @@
-import {MdFavorite} from 'react-icons/Md'
+import {MdFavorite} from 'react-icons/md'
 import './recipe.css'
 const Recipe = () => {
   return (
     <div className="card">
-      <img className="img" src="./src/pages/food image.webp" alt="Food" className="card-image" />
+      <img className="img" src="./src/pages/food image.webp" alt="Food" />
       <div><button onClick={() => {alert('save to favourites')}}><a href="./Favourite"><MdFavorite /></a></button></div>
       <div className="card-details">
         <h2 className="card-title">Delicious Food</h2>

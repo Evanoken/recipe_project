@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {GrFavorite} from 'react-icons/Gr'
+import {GrFavorite} from 'react-icons/gr'
 import Image from '../assets/freshia.jpg'
 // import './favourites.css'
 function Favorites() {
