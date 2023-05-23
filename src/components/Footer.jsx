@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className='footer'>
       <div className='project'>
-        <h4>@ Recipe-project </h4>
+        <h4>@ Recipe-project collaboration</h4>
           <h4> Date:{year}</h4>
 
       </div>
