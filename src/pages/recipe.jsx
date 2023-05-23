@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useReducer, useState} from "react";
 import { MdFavorite } from "react-icons/md";
 import "./recipe.css";
 
@@ -166,10 +166,16 @@ const reducer = (state, action) => {
 const Recipe = () => {
   const [cards, dispatch] = useReducer(reducer, initialState);
 
+  const [favorites, setFavorites] = useState([]);
+
   const handleSaveToFavorites = (id) => {
     dispatch({
       type: "SAVE_TO_FAVORITES",
       id,
+    });
+    setFavorites((prevFavorites) => {
+      const newFavorites = [...prevFavorites, id];
+      return newFavorites;
     });
   };
 
@@ -180,8 +186,7 @@ const Recipe = () => {
           <img className="img" src="./src/pages/food image.webp" alt="Food" />
           <div>
             <button
-              onClick={(e) => {
-                e.preventDefault();
+              onClick={() => {
                 handleSaveToFavorites(card.id);
                 alert("saved to favorites");
               }}
