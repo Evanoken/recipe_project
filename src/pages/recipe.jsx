@@ -186,7 +186,8 @@ const Recipe = () => {
           <img className="img" src="./src/pages/food image.webp" alt="Food" />
           <div>
             <button
-              onClick={() => {
+              onClick={(e) => {
+                e.preventDefault();
                 handleSaveToFavorites(card.id);
                 alert("saved to favorites");
               }}
