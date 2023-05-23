@@ -1,0 +1,16 @@
+.footer{
+    background-color:rgb(194, 201, 201);
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-end;
+    text-decoration: none;
+    
+    
+  }
+  .project{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;   
+  }
