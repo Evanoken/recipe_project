@@ -8,8 +8,6 @@ import Recipe from './pages/recipe'
 import NotFound from './pages/NotFound'
 import Footer from './components/Footer'
 
-import './App.css'
-
 function App() {
   return (
     <>
