@@ -1,24 +1,20 @@
 import { useState } from 'react'
 import {GrFavorite} from 'react-icons/Gr'
 import Image from '../assets/freshia.jpg'
-import './favorites.css'
-function Favourites() {
+// import './favourites.css'
+function Favorites() {
   const [showText, setShowText] = useState ('true')
-  const [fav, setfavorites] = useState([])
   // const [state, dispatch] = useReducer (reducer, {})
 
-  const showinstructions = () => {
+  const showInstructions = () => {
     setShowText (!showText);
   }
-  const addRecipe = (e) => {
-      e.prevent.default();
-      setfavorites
-  }
+ 
   return (
     <>
       <img src={Image} /> <br />
-      <button onClick={addRecipe}><GrFavorite className="fav"/></button>
-      <button onClick={showinstructions}>Read more / collapse</button>
+      <button><GrFavorite className="fav"/></button>
+      <button onClick={showInstructions}>Read more / collapse</button>
       {showText && 
       <div>
         <p><h3>Ingredients for Pizza:</h3>
@@ -72,4 +68,4 @@ Enjoy your homemade pizza!</p>
   )
 }
 
-export default Favourites
+export default Favorites
