@@ -1,0 +1,40 @@
+.content {
+    margin: 2px 10px;
+    height: 150vh;
+    width: 95%;
+}
+
+#intro {
+    color: deeppink;
+    text-align: center;
+}
+
+.main1 {
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main1 form input {
+    border: 2px solid grey;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: rgb(165, 238, 155);
+}
+
+.dish2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dish2 img {
+    border-radius: 10px;
+}
+
+.dish2 pre {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}

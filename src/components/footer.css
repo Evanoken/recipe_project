@@ -5,7 +5,8 @@
     gap: 2rem;
     justify-content: flex-end;
     text-decoration: none;
-    
+    /* padding: 13px; */
+    margin-bottom: 15px;
     
   }
   .project{

@@ -3,11 +3,10 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './pages/About'
 import Home from './pages/Home'
-import Favorite from './pages/Favorite'
+import Favorite from './pages/Favorite
+import Recipe from './pages/recipe'
 import NotFound from './pages/NotFound'
 import Footer from './components/Footer'
-
-// import Recipe from './pages/Recipe'
 
 function App() {
   return (
@@ -18,14 +17,15 @@ function App() {
       <Route path="/" element={<Home />}/>
       <Route path="/favorite" element={<Favorite />}/>
       <Route path="/about" element={ <About /> }/>
+      <Route path="/recipe" element={<Recipe />}/>
+      <Route path="/Favorite" element={<Favorite />}/>
+      <Route path="/About" element={ <About /> }/>
       <Route path="*" element={<NotFound />}/>
       
     </Routes>
     <Footer />
     </BrowserRouter>
-    <About />
-    <NotFound />
-    <Favourites />
+  
     </>
   )
 }

@@ -1,0 +1,51 @@
+.main-content {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 #ccc;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  margin: 10px 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+
+}
+
+.img {
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+.card-details {
+  margin-left: 120px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card-steps {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-steps li {
+  margin-bottom: 10px;
+}
+
+.favorite {
+  color: red;
+}

@@ -1,0 +1,26 @@
+.containerH {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 30px;
+    padding: 20px;
+
+  }
+  
+  .food-image {
+    width: 50rem;
+    height: 70vh;
+    border-radius:10px;
+  }
+  .content{
+    padding: 30px;
+  }
+  .content li{
+    list-style-type: none;
+    color:black;
+    font-size: 18px;
+  }
+  .content ul{
+    display: flex;
+    flex-direction: column;
+  }
