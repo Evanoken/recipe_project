@@ -79,6 +79,6 @@ Slice and serve:</pre>
       </div>
     </div>
   );
-};
+}
 
 export default Fevorites;
