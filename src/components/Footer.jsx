@@ -1,4 +1,4 @@
-import 'footer.css'
+import './footer.css'
 
 function Footer() {
   const year = new Date().toLocaleDateString();
