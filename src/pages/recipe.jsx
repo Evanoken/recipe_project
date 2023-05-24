@@ -187,12 +187,16 @@ const Recipe = () => {
           <div>
             <button
               onClick={(e) => {
+
                 e.preventDefault()
+
+                e.preventDefault();
+
                 handleSaveToFavorites(card.id);
-                alert("saved to favorites");
+                alert("saved to favorites"); 
               }}
             >
-              <a href="./Favourite"><MdFavorite /></a>
+              <a href="./Favorite"><MdFavorite /></a>
             </button>
           </div>
           <div className="card-details">

@@ -1,7 +1,11 @@
 import {useState} from 'react'
 import "./Fevorite.css";
 
+
 function Favorites(){
+
+function Fevorites(){
+
 
   const [fevorite, setFavorite] = useState({});
 
@@ -19,20 +23,30 @@ function Favorites(){
     <div className='content'>
       <div id='intro'><h1>Add Your Favorites recipes</h1></div>
       <div className='main1'>
+
     <div className='Tform'>  <form onSubmit = {handleSubmit}>
         <label>Enter your fevorite dish:<br/>
             <input type="text" name = "inputrecipe"  value = {fevorite.inputrecipe || ""} onChange={handleChange} />
              </label>
              <br/><br/>
              <label>Enter the dish ingredients:<br/>
+
+      <form onSubmit = {handleSubmit}>
+        <label>Enter your fevorite recipe:<br/>
+
             <input type="text" name = "inputrecipe"  value = {fevorite.inputrecipe || ""} onChange={handleChange} />
              </label>
              <br/><br/>
 
         <label>Add Instuctions:<br/>
+
             <textarea type="text"  name="add instructions" value={fevorite.instruction || ''} onChange={handleChange} />
         </label>
         <br/>
+
+            <textarea name="add instructions" value={fevorite.instruction || ''} onChange={handleChange} />
+        </label>
+        <br/><br/>
         <label>
             <select name='foottypes' value={fevorite.dishes || ""} onChange={handleChange}>
                 <options value="Piza">Piza</options>
@@ -44,6 +58,7 @@ function Favorites(){
         <input type="submit" /><br/><br/>
 
       </form>
+
       </div>
       <div>
         <img src='./src/pages/Africa.avif' style={{width:"550px",height:"400px", borderRadius:"8px"}}/>
@@ -90,4 +105,8 @@ Slice and serve:</pre>
   );
 };
 
+
 export default Favorites;
+
+export default Fevorites;
+
