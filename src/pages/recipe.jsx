@@ -187,7 +187,11 @@ const Recipe = () => {
           <div>
             <button
               onClick={(e) => {
+
+                e.preventDefault()
+
                 e.preventDefault();
+
                 handleSaveToFavorites(card.id);
                 alert("saved to favorites"); 
               }}
